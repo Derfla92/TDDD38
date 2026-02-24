@@ -15,7 +15,7 @@ T reduce(T const (&array)[N], T initial = {},
          T (*op)(T const &, T const &) = add<T>)
 {
     T result{initial};
-    for (size_t i{0}; i < 5; ++i)
+    for (size_t i{0}; i < N; ++i)
     {
         result = op(result, array[i]);
     }
